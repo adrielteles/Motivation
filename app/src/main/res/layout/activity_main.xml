@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:src="@drawable/ic_infinity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            app:tint="@color/white"/>
+        <ImageView
+            android:src="@drawable/ic_happy"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            app:tint="@color/white"/>
+        <ImageView
+            android:src="@drawable/ic_sunny"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_motivation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="motivation motivation"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="18sp"
+        />
+    
+    <View
+        android:layout_width="128dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/text_motivation"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner_view"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nova Frase"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_corner_view"
+        android:padding="15dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        />
+</RelativeLayout>
