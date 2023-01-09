@@ -1,2 +1,2 @@
 # Motivation
- this is an application that shows motivational phrases
+ this is an android application that shows motivational phrases
