@@ -8,10 +8,15 @@
     tools:context=".MainActivity">
     
     <LinearLayout
+        android:id="@+id/Linear_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:background="@color/black">
+        android:background="@color/purple"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        >
 
         <ImageView
             android:src="@drawable/ic_infinity"
@@ -24,24 +29,38 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="32dp"
-            app:tint="@color/white"/>
+            app:tint="@color/black"/>
         <ImageView
             android:src="@drawable/ic_sunny"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="32dp"
-            app:tint="@color/white" />
+            app:tint="@color/black" />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá, Kotlin"
+        android:layout_below="@+id/Linear_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/black"
+
+        />
 
     <TextView
         android:id="@+id/text_motivation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:text="motivation motivation"
+        android:text="@string/app_name"
+        android:fontFamily="@font/cabin"
         android:gravity="center"
         android:padding="16dp"
-        android:textSize="18sp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
         />
     
     <View
@@ -50,17 +69,24 @@
         android:layout_below="@+id/text_motivation"
         android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_corner_view"
+        android:backgroundTint="@color/dark_purple"
+        android:elevation="5dp"
         />
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_new_phrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nova Frase"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
         android:background="@drawable/rounded_corner_view"
+        android:backgroundTint="@color/dark_purple"
         android:padding="15dp"
-        android:paddingEnd="30dp"
         android:paddingStart="30dp"
-        />
+        android:paddingEnd="30dp"
+        android:text="@string/new_phrase"
+        android:textColor="@color/white"
+        android:fontFamily="@font/cabin"
+        android:elevation="5dp"/>
 </RelativeLayout>
