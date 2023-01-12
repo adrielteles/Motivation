@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
     
     <LinearLayout
         android:id="@+id/Linear_bar"
@@ -19,26 +19,30 @@
         >
 
         <ImageView
+            android:id="@+id/image_all"
             android:src="@drawable/ic_infinity"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="32dp"
-            app:tint="@color/white"/>
+            app:tint="@color/dark_purple"/>
         <ImageView
+            android:id="@+id/image_happy"
             android:src="@drawable/ic_happy"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="32dp"
-            app:tint="@color/black"/>
+            app:tint="@color/dark_purple"/>
         <ImageView
+            android:id="@+id/image_sunny"
             android:src="@drawable/ic_sunny"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="32dp"
-            app:tint="@color/black" />
+            app:tint="@color/dark_purple" />
     </LinearLayout>
 
     <TextView
+        android:id="@+id/text_user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Olá, Kotlin"
